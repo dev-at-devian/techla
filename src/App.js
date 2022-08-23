@@ -6,32 +6,160 @@ import SVGMusicNotation from 'svg-music-notation';
 import MIDISounds from 'midi-sounds-react';
 import {useState, useRef} from 'react';
 import { Card, CardContent, CardActions } from '@mui/material';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useNavigate} from "react-router-dom";
+
 import QuizCard from './components/QuizCard';
+import QuizList from './components/QuizList';
+import Prototype from './components/Prototype'
+import MainPage from './components/MainPage';
+
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import MenuItem from '@mui/material/MenuItem';
+import Menu from '@mui/material/Menu';
+import MenuIcon from '@mui/icons-material/Menu';
+import IconButton from '@mui/material/IconButton';
+
+
+
 
 function App() {
-  const alarm = new Audio(beep);
-  const [selectedAnswer, setSelectedAnswer] = useState("Option 1");
-  let midiSounds = useRef(null);
-  const userSource = `
-                      \\E C5-4n ||
-                      \\E 
-`;
+
+  const [anchorEl, setAnchorEl] = useState(null);
+  const navigate = useNavigate();
+
   return (
     <div className="App">
-      <BrowserRouter>
-        <Piano whiteKeysColor="#000000" blackKeysColor="#ff0" stroke="#ff0"/>
+        <AppBar className='AppBar' position="static">
+            <Toolbar>
+                <div>
+                  <IconButton
+                    size="large"
+                    aria-label="account of current user"
+                    aria-controls="menu-appbar"
+                    aria-haspopup="true"
+                    onClick={(event) => setAnchorEl(event.currentTarget)}
+                    color="inherit"
+                  >
+                    <MenuIcon />
+                  </IconButton>
+                  
+                  <Menu
+                    id="menu-appbar"
+                    anchorEl={anchorEl}
+                    anchorOrigin={{ vertical: 'top', horizontal: 'left', }}
+                    keepMounted
+                    transformOrigin={{ vertical: 'top', horizontal: 'left', }}
+                    open={Boolean(anchorEl)}
+                    onClose={() => setAnchorEl(null)}>
 
-        <Routes>
-            <Route path="/" element={<div>lalala</div>} />
-            <Route path="/test" element={<QuizCard />} />
-            <Route path="*" element={<div>lol</div>} />
-        </Routes>
+                    <MenuItem onClick={() => {
+                        setAnchorEl(null);
+                        navigate("/");
+                      }
+                     }>
+                      Profile
+                    </MenuItem>
+                    <MenuItem onClick={() => {
+                        setAnchorEl(null);
+                        navigate("/test");
+                      }
+                     }>
+                      1 - Fundamentals
+                    </MenuItem>
+                    <MenuItem onClick={() => {
+                        setAnchorEl(null);
+                        navigate("/prototype");
+                      }
+                     }>
+                      2 - Notes
+                    </MenuItem>
+                    <MenuItem onClick={() => {
+                        setAnchorEl(null);
+                        navigate("/quiz");
+                      }
+                     }>
+                      3 - Notes
+                    </MenuItem>
+                    <MenuItem onClick={() => {
+                        setAnchorEl(null);
+                        navigate("/test");
+                      }
+                     }>
+                      4 - Chords
+                    </MenuItem>
+                    <MenuItem onClick={() => {
+                        setAnchorEl(null);
+                        navigate("/test");
+                      }
+                     }>
+                      5 - Songs
+                    </MenuItem>
+                    <div>---------------</div>
+                    <MenuItem onClick={() => {
+                        setAnchorEl(null);
+                        navigate("/test");
+                      }
+                     }>
+                      Free Play!
+                    </MenuItem>
+                    <MenuItem onClick={() => {
+                        setAnchorEl(null);
+                        navigate("/test");
+                      }
+                     }>
+                      Forum
+                    </MenuItem>
+                    <MenuItem onClick={() => {
+                        setAnchorEl(null);
+                        navigate("/test");
+                      }
+                     }>
+                      Support
+                    </MenuItem>
 
-        <div style={{ visibility: "collapse" }}>
-          <MIDISounds ref={(ref) => (midiSounds = ref)} appElementName="root" instruments={[3]} />
+                    <MenuItem onClick={() => {
+                        setAnchorEl(null);
+                        navigate("/test");
+                      }
+                     }>
+                      Settings
+                    </MenuItem>
+
+                    <MenuItem onClick={() => {
+                        setAnchorEl(null);
+                        navigate("/test");
+                      }
+                     }>
+                      About Us
+                    </MenuItem>
+
+
+                  </Menu>
+
+
+
+                </div>
+                <h1>Test</h1>
+                <Box className='AppBar-box'>
+                    <Button className="AppBar-btn" color="inherit">Sprites</Button>
+                    <Button className="AppBar-btn" color="inherit">Code</Button>
+                    <Button className="AppBar-btn" color="inherit">Other</Button>
+                </Box>
+            </Toolbar>
+        </AppBar>
+
+        <div style={{ margin: 40 }}>
+          <Routes>
+              <Route path="/" element={<MainPage />} />
+              <Route path="/test" element={<QuizCard />} />
+              <Route path="/prototype" element={<Prototype />} />
+              <Route path="/quiz" element={<QuizList />} />
+              <Route path="*" element={<div>lol</div>} />
+          </Routes>
         </div>
-      </BrowserRouter>
 
     </div>
   );

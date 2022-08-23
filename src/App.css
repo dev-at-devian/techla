@@ -1,10 +1,59 @@
+body {
+  background-image: url("./img/background.jpg");
+}
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.AppBar {
+    background-color: rgba(0, 0, 0, 0) !important;
+    outline: 10px solid rgba(0, 0, 0, 0.2);
+    box-shadow: none !important;
+    color: black;
+}
+
+.AppBar-logo {
+    height: 5vmin;
+    margin-right: 1em;
+}
+
+.AppBar-box {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.AppBar-btn {
+    border-radius: 5px !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    font-size: 15px !important;
+}
+
+.AppBar-searchbar {
+    position: relative;
+    background-color: #222;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.MainPage {
+    background-color: #00e673;
+    padding: 15px;
+    min-height: 100vh;
+}
+
+.GenericSection {
+    background-color: #141414;
+    border-radius: 2px;
+    box-shadow: 0px 1px 5px #141414;
+    padding: 25px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -21,7 +70,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {

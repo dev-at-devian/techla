@@ -1,0 +1,15 @@
+.note-animation {
+  animation: noteanimation 1s forwards;
+}
+
+@keyframes noteanimation {
+  0% {
+    fill: #ffffff;
+  }
+  25% {
+    fill: #ff0;
+  }
+  100% {
+    fill: #ffffff;
+  }
+}
