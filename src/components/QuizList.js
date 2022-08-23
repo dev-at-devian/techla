@@ -1,6 +1,7 @@
 import { Card, CardContent, CardActions } from '@mui/material';
 import {useState, useRef} from 'react';
 import QuizCard from './QuizCard';
+import {getImgNota, getNota} from './Funcoes.js';
 
 function QuizList() {
 
@@ -10,10 +11,10 @@ function QuizList() {
     sound: [3, 60, 2.5],
     correct: 1,
     choices: [
-      { note: "C4-4n", sound: [3, 60, 2.5]},
-      { note: "D4-4n", sound: [3, 62, 2.5]},
-      { note: "E4-4n", sound: [3, 64, 2.5]},
-      { note: "F4-4n", sound: [3, 65, 2.5]},
+      { note: getImgNota("C"), sound: getNota("C")},
+      { note: getImgNota("D"), sound: getNota("D")},
+      { note: getImgNota("E"), sound: getNota("E")},
+      { note: getImgNota("F"), sound: getNota("F")},
     ]
   };
 
@@ -23,10 +24,10 @@ function QuizList() {
     sound: [3, 62, 2.5],
     correct: 4,
     choices: [
-      { note: "C5-4n", sound: [3, 60, 2.5]},
-      { note: "C5-4n", sound: [3, 62, 2.5]},
-      { note: "C5-4n", sound: [3, 64, 2.5]},
-      { note: "C5-4n", sound: [3, 65, 2.5]},
+      { note: getImgNota("E"), sound: getNota("E")},
+      { note: getImgNota("C"), sound: getNota("C")},
+      { note: getImgNota("F"), sound: getNota("F")},
+      { note: getImgNota("D"), sound: getNota("D")},
     ]
   };
 

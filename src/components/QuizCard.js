@@ -4,7 +4,6 @@ import MIDISounds from 'midi-sounds-react';
 import {useState, useRef} from 'react';
 import SpeakerSVG from '../img/speaker.svg';
 
-
 function QuizCard(props) {
 
   const [selectedAnswer, setSelectedAnswer] = useState(0);
@@ -19,7 +18,7 @@ function QuizCard(props) {
                midiSounds.playChordNow(question.choices[i].sound[0], [question.choices[i].sound[1]], question.choices[i].sound[2]);
                setSelectedAnswer(i+1);
          }}>
-         <SVGMusicNotation width={100} height={100} source={`\\E ${question.choices[i].note} ||\n\\E`} />
+         <img src={question.choices[i].note} width="100" height="60" />
       </div>
     );
   }
