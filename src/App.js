@@ -1,25 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-
+import beep from './beep.wav';
+import Piano from './Piano';
 function App() {
+  const alarm = new Audio(beep);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={ () => alarm.play() }>Playoyoyyo</button>
+      <Piano whiteKeysColor="#000000" blackKeysColor="#ff0" stroke="#ff0"/>
     </div>
   );
-}
+};
 
 export default App;
