@@ -39,8 +39,8 @@ function QuizCard(props) {
             {choices}
           </CardActions>
             <button onClick={() => {
-              if (selectedAnswer === "Option 4") {
-                console.log(true);
+              if (selectedAnswer === question.correct) {
+                props.onCorrect();
               } else {
                 console.log(false);
               }
