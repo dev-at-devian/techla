@@ -1,11 +1,51 @@
 import MIDISounds from 'midi-sounds-react';
-import {useState, useRef} from 'react';
+import {useState, useEffect, useRef} from 'react';
 import './Prototype.css';
 
 function Prototype(props) {
     const pianoKeys = [];
     let midiSounds = useRef(null);
     const [animationClassNames, setAnimationClassNames] = useState("");
+
+    const useEventListener = (eventName, handler, element = window) => {
+    const savedHandler = useRef();
+
+      useEffect(() => {
+        savedHandler.current = handler;
+      }, [handler]);
+
+      useEffect(() => {
+        const eventListener = (event) => savedHandler.current(event);
+        element.addEventListener(eventName, eventListener);
+        return () => {
+          element.removeEventListener(eventName, eventListener);
+        };
+      }, [eventName, element]);
+    };
+
+    const handler = ({ key }) => {
+      if (key == 'a') {
+        console.log('A');
+      }
+   
+      if (key == 's') {
+        console.log('S');
+      }
+   
+      if (key == 'd') {
+        console.log('D');
+      }
+   
+      if (key == 'f') {
+        console.log('F');
+      }
+   
+      if (key == 'g') {
+        console.log('G');
+      }
+    };
+
+    useEventListener("keydown", handler);
 
     return (
        <>
