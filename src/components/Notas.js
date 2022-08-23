@@ -7,11 +7,53 @@ import imgMi from './mi.png'
 import imgFa from './fa.png';
 import imgSol from './sol.png';
 import './App.css';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import MIDISounds from 'midi-sounds-react';
+
+const ESCAPE_KEYS = ["27", "Escape"];
+
+const useEventListener = (eventName, handler, element = window) => {
+  const savedHandler = useRef();
+
+  useEffect(() => {
+    savedHandler.current = handler;
+  }, [handler]);
+
+  useEffect(() => {
+    const eventListener = (event) => savedHandler.current(event);
+    element.addEventListener(eventName, eventListener);
+    return () => {
+      element.removeEventListener(eventName, eventListener);
+    };
+  }, [eventName, element]);
+};
 
 
 function App() {
+  const handler = ({ key }) => {
+    if (key == 'a') {
+      showDo();
+    }
+
+    if (key == 's') {
+      showRe();
+    }
+
+    if (key == 'd') {
+      showMi();
+    }
+
+    if (key == 'f') {
+      showFa();
+    }
+
+    if (key == 'g') {
+      showSol();
+    }
+  };
+
+  useEventListener("keydown", handler);
+
 
   const [imgNota,setNota] = useState(vazio);
   const [txtNota,setNome] = useState("");
@@ -49,11 +91,15 @@ function App() {
     setNome("sol");
   }
 
+  console.log("teste1");
+
+
   return (
+
+
     <div className="App">
+
       <header className="App-header">
-
-
         <a
           className="App-link"
           href="https://reactjs.org"
