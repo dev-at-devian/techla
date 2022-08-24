@@ -177,35 +177,6 @@ function Notas() {
             {txtNota} <br />
             <img src={imgNota} />
         </p>
-        <table>
-        <tbody>
-            <tr>
-              <td>
-                <button onClick={showDo}>
-                dó
-                </button>
-              </td>
-              <td>
-                <button onClick={showRe}>
-                  ré
-                </button>
-              </td>
-              <td>
-                <button onClick={showMi}>
-                  mi
-                </button>
-              </td>
-              <td>
-                <button onClick={showFa}>
-                  fá
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <button onClick={playSnd}>
-          Play
-        </button>
         <div style={{ visibility: "collapse" }}>
           <MIDISounds ref={(ref) => (midiSounds = ref)} appElementName="root" instruments={[3]} />
         </div>
