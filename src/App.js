@@ -11,6 +11,7 @@ import { BrowserRouter, Routes, Route, useNavigate} from "react-router-dom";
 import QuizCard from './components/QuizCard';
 import QuizList from './components/QuizList';
 import Prototype from './components/Prototype'
+import SecondPrototype from './components/SecondPrototype';
 import MainPage from './components/MainPage';
 
 import AppBar from '@mui/material/AppBar';
@@ -156,6 +157,7 @@ function App() {
               <Route path="/" element={<MainPage />} />
               <Route path="/test" element={<QuizCard />} />
               <Route path="/prototype" element={<Prototype />} />
+              <Route path="/prototype2" element={<SecondPrototype />} />
               <Route path="/quiz" element={<QuizList />} />
               <Route path="*" element={<div>lol</div>} />
           </Routes>

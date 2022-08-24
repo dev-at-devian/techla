@@ -5,6 +5,8 @@ import {getImgNota, getNota} from './Funcoes.js';
 
 function QuizList() {
 
+  const [ended, setEnded] = useState(false);
+
   const sampleQuestion = {
     type: "Note Identification",
     title: "Test test",
@@ -37,7 +39,12 @@ function QuizList() {
   const [currentQuestion, setCurrentQuestion] = useState(sampleQuestion);
 
   const handleCorrectAnswer = () => {
-    setCurrentQuestion(questions.pop());
+    console.log(questions.length);
+    if (questions.length > 0) {
+      setCurrentQuestion(questions.pop());
+    } else {
+      setEnded(true);
+    }
   }
 
   return (
@@ -45,7 +52,7 @@ function QuizList() {
         <Card style={{ margin: 50 }}>
           <CardContent>
             <h2>Questions:</h2>
-            <QuizCard question={currentQuestion} onCorrect={handleCorrectAnswer} />
+            {ended ? <h2>Success</h2> : <QuizCard question={currentQuestion} onCorrect={handleCorrectAnswer} />}
           </CardContent>
         </Card>
     </>
