@@ -67,7 +67,7 @@ function QuizList() {
     <>
         <Card style={{ margin: 50 }}>
           <CardContent>
-            <h2>Questions:</h2>
+            <h2>Challenges:</h2>
             {ended ? <h2>Success</h2> : <QuizCard question={currentQuestion} onCorrect={handleCorrectAnswer} />}
           </CardContent>
           <SecondPrototype />
