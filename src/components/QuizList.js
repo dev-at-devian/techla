@@ -10,7 +10,7 @@ function QuizList() {
 
   const sampleQuestion = {
     type: "Note Identification",
-    title: "Test test",
+    title: "Questão 1",
     sound: [3, 60, 2.5],
     correct: 1,
     choices: [
