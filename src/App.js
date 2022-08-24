@@ -145,7 +145,7 @@ function App() {
 
 
                 </div>
-                <h1 style={{color:"rgba(0,0,0,0.4)"}}>Tech_la</h1>
+                <h1 style={{color:"rgba(0,0,0,0.4)"}}>tech_la</h1>
             </Toolbar>
         </AppBar>
 
