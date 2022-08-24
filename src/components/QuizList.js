@@ -2,6 +2,7 @@ import { Card, CardContent, CardActions } from '@mui/material';
 import {useState, useRef} from 'react';
 import QuizCard from './QuizCard';
 import {getImgNota, getNota} from './Funcoes.js';
+import SecondPrototype from './SecondPrototype';
 
 function QuizList() {
 
@@ -34,14 +35,15 @@ function QuizList() {
   };
 
 
-  const questions = [sampleQuestion2];
+  const [questions, setQuestions] = useState([sampleQuestion2]);
 
   const [currentQuestion, setCurrentQuestion] = useState(sampleQuestion);
 
   const handleCorrectAnswer = () => {
     console.log(questions.length);
     if (questions.length > 0) {
-      setCurrentQuestion(questions.pop());
+      setCurrentQuestion(questions[0]);
+      setQuestions(questions.slice(1));
     } else {
       setEnded(true);
     }
@@ -54,7 +56,9 @@ function QuizList() {
             <h2>Questions:</h2>
             {ended ? <h2>Success</h2> : <QuizCard question={currentQuestion} onCorrect={handleCorrectAnswer} />}
           </CardContent>
+          <SecondPrototype />
         </Card>
+        
     </>
   );
 }

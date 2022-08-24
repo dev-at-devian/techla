@@ -1,60 +1,54 @@
-import logo from './logo.svg';
-import ximg from './x.png';
-import vazio from './vazio.png';
-import imgDo from './do.png';
-import imgRe from './re.png';
-import imgMi from './mi.png'
-import imgFa from './fa.png';
-import imgSol from './sol.png';
-import './App.css';
+import imgDo from '../img/do.png';
+import imgRe from '../img/re.png';
+import imgMi from '../img/mi.png'
+import imgFa from '../img/fa.png';
 import { useState, useRef, useEffect } from 'react';
 import MIDISounds from 'midi-sounds-react';
+import SecondPrototype from './SecondPrototype';
 
-const ESCAPE_KEYS = ["27", "Escape"];
+function Notas() {
 
-const useEventListener = (eventName, handler, element = window) => {
-  const savedHandler = useRef();
+  const useEventListener = (eventName, handler, element = window) => {
+    const savedHandler = useRef();
 
-  useEffect(() => {
-    savedHandler.current = handler;
-  }, [handler]);
+    useEffect(() => {
+      savedHandler.current = handler;
+    }, [handler]);
 
-  useEffect(() => {
-    const eventListener = (event) => savedHandler.current(event);
-    element.addEventListener(eventName, eventListener);
-    return () => {
-      element.removeEventListener(eventName, eventListener);
-    };
-  }, [eventName, element]);
-};
+    useEffect(() => {
+      const eventListener = (event) => savedHandler.current(event);
+      element.addEventListener(eventName, eventListener);
+      return () => {
+        element.removeEventListener(eventName, eventListener);
+      };
+    }, [eventName, element]);
+  };
 
-window.notas = ""
-window.musica = "123444121222"
 
-const comparaSeq = () => {
-  var str1 = window.musica;
-  var str2 = window.notas;
-  var result = 0
-  console.log(str2 + ' ' + str1);
-  if (str1.startsWith(str2)) {
-    if (str1 == str2) {
-       result = 1; /* você venceu */
-    } /* nota correta */
+  const [notas, setNotas] = useState();
+  const musica = "123444121222";
+
+  const comparaSeq = (str1, str2) => {
+    var result = 0
+    console.log(str2 + ' ' + str1);
+    if (str1.startsWith(str2)) {
+      if (str1 == str2) {
+         result = 1; /* você venceu */
+      } /* nota correta */
+    }
+    else {
+      result = 2; /* você perdeu */
+    }
+    if (result > 0) {
+      setNotas("");
+    }
+    return result;
   }
-  else {
-    result = 2; /* você perdeu */
-  }
-  if (result > 0) {
-    window.notas = "";
-  }
-  return result;
-}
 
 
-function App() {
   const msgStatus = () => {
       if (iniciou) {
-        var rCompara = comparaSeq();
+        var rCompara = comparaSeq(musica, notas);
         if (rCompara == 0) {
           setJogo("Continue...")
         } else if (rCompara == 1) {
@@ -84,22 +78,19 @@ function App() {
       showFa();
     }
 
-    if (key == 'g') {
-      showSol();
-    }
   };
 
   useEventListener("keydown", handler);
 
 
-  const [imgNota,setNota] = useState(vazio);
+  const [imgNota,setNota] = useState(imgDo);
   const [txtNota,setNome] = useState("");
   const [txtJogo,setJogo] = useState("Aperte play!");
   const [iniciou,setIniciou] = useState(0);
   let midiSounds = useRef(null);
 
   const playSnd = () => {
-    window.notas = "";
+    setNotas("");
     if (!iniciou) {
       setJogo("Tocando...");
       midiSounds.playChordAt(midiSounds.contextTime() + 0.5, 3, [60], 0.25);
@@ -134,7 +125,7 @@ function App() {
     midiSounds.playChordNow(3, [60], 2.5)
     setNota(imgDo);
     setNome("dó");
-    window.notas += "1";
+    setNotas(notas + "1");
     msgStatus();
   }
 
@@ -142,7 +133,7 @@ function App() {
     midiSounds.playChordNow(3, [62], 2.5)
     setNota(imgRe);
     setNome("ré");
-    window.notas += "2";
+    setNotas(notas + "2");
     msgStatus();
   }
 
@@ -150,7 +141,7 @@ function App() {
     midiSounds.playChordNow(3, [64], 2.5)
     setNota(imgMi);
     setNome("mi");
-    window.notas += "3";
+    setNotas(notas + "3");
     msgStatus();
   }
 
@@ -158,23 +149,16 @@ function App() {
     midiSounds.playChordNow(3, [65], 2.5)
     setNota(imgFa);
     setNome("fá");
-    window.notas += "4";
+    setNotas(notas + "4");
     msgStatus();
   }
-
-  const showSol = () => {
-    midiSounds.playChordNow(3, [67], 2.5)
-    setNota(imgSol);
-    setNome("sol");
-    window.notas += "5";
-    msgStatus();
-  }
-
 
   return (
 
 
     <div className="App">
+
+      <SecondPrototype />
 
       <header className="App-header">
         <a
@@ -193,8 +177,6 @@ function App() {
             {txtNota} <br />
             <img src={imgNota} />
         </p>
-
-
         <table>
         <tbody>
             <tr>
@@ -218,11 +200,6 @@ function App() {
                   fá
                 </button>
               </td>
-              <td>
-                <button onClick={showSol}>
-                  sol
-                </button>
-              </td>
             </tr>
           </tbody>
         </table>
@@ -237,4 +214,4 @@ function App() {
   );
 }
 
-export default App;
+export default Notas;

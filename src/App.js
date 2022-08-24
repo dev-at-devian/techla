@@ -13,6 +13,7 @@ import QuizList from './components/QuizList';
 import Prototype from './components/Prototype'
 import SecondPrototype from './components/SecondPrototype';
 import MainPage from './components/MainPage';
+import Notas from './components/Notas';
 
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -48,6 +49,7 @@ function App() {
                   </IconButton>
                   
                   <Menu
+                    style={{color:"rgba(0,0,0,0.2)"}}
                     id="menu-appbar"
                     anchorEl={anchorEl}
                     anchorOrigin={{ vertical: 'top', horizontal: 'left', }}
@@ -143,19 +145,14 @@ function App() {
 
 
                 </div>
-                <h1>Test</h1>
-                <Box className='AppBar-box'>
-                    <Button className="AppBar-btn" color="inherit">Sprites</Button>
-                    <Button className="AppBar-btn" color="inherit">Code</Button>
-                    <Button className="AppBar-btn" color="inherit">Other</Button>
-                </Box>
+                <h1 style={{color:"rgba(0,0,0,0.4)"}}>Tech_la</h1>
             </Toolbar>
         </AppBar>
 
         <div style={{ margin: 40 }}>
           <Routes>
               <Route path="/" element={<MainPage />} />
-              <Route path="/test" element={<QuizCard />} />
+              <Route path="/test" element={<Notas />} />
               <Route path="/prototype" element={<Prototype />} />
               <Route path="/prototype2" element={<SecondPrototype />} />
               <Route path="/quiz" element={<QuizList />} />
