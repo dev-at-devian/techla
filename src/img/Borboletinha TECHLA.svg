@@ -4502,41 +4502,5 @@
        </g>
 
       </g>
-    <g
-       class="TextShape"
-       id="g2858"
-       transform="matrix(0.01,0,0,0.01,-2.8640782,58.391417)">
-       <g
-   id="id192">
-        <rect
-   class="BoundingBox"
-   stroke="none"
-   fill="none"
-   x="1199"
-   y="5955"
-   width="353"
-   height="481"
-   id="rect2847" />
-
-        <text
-   class="SVGTextShape"
-   id="text2855"><tspan
-     class="TextParagraph"
-     font-family="SourceSerifPro, serif"
-     font-size="353px"
-     font-weight="400"
-     id="tspan2853"><tspan
-       class="TextPosition"
-       x="1199"
-       y="6332"
-       id="tspan2851"><tspan
-         fill="#000000"
-         stroke="none"
-         style="white-space:pre"
-         id="tspan2849">3</tspan></tspan></tspan></text>
-
-       </g>
-
-      </g>
   </g>
 </svg>

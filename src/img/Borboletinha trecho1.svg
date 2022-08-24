@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="98.339996mm"
+   height="15.72mm"
+   viewBox="0 0 98.339996 15.72"
+   version="1.1"
+   id="svg8015"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8012" />
+  <g
+     id="layer1"
+     transform="translate(-93.39,-136.482)">
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1686"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id6">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="1199"
+   y="3845"
+   width="679"
+   height="1483"
+   id="rect1683" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1693"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id7">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="1164"
+   y="5009"
+   width="679"
+   height="23"
+   id="rect1688" />
+
+        <path
+   fill="#000000"
+   stroke="none"
+   d="m 1164,5009 h 678 v 22 h -678 z"
+   id="path1690" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1700"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id8">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="1164"
+   y="4797"
+   width="679"
+   height="24"
+   id="rect1695" />
+
+        <path
+   fill="#000000"
+   stroke="none"
+   d="m 1164,4797 h 678 v 22 h -678 z"
+   id="path1697" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1707"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id9">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="1164"
+   y="4586"
+   width="679"
+   height="23"
+   id="rect1702" />
+
+        <path
+   fill="#000000"
+   stroke="none"
+   d="m 1164,4586 h 678 v 22 h -678 z"
+   id="path1704" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1714"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id10">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="1164"
+   y="4374"
+   width="679"
+   height="23"
+   id="rect1709" />
+
+        <path
+   fill="#000000"
+   stroke="none"
+   d="m 1164,4374 h 678 v 22 h -678 z"
+   id="path1711" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1721"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id11">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="1164"
+   y="4162"
+   width="679"
+   height="23"
+   id="rect1716" />
+
+        <path
+   fill="#000000"
+   stroke="none"
+   d="m 1164,4162 h 678 v 22 h -678 z"
+   id="path1718" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1726"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id12">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="1305"
+   y="3887"
+   width="520"
+   height="1471"
+   id="rect1723" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.ClosedBezierShape"
+       id="g1733"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id13">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="1305"
+   y="3886"
+   width="521"
+   height="1473"
+   id="rect1728" />
+
+        <path
+   fill="#000000"
+   stroke="none"
+   d="m 1660,3923 c 15,28 28,61 40,102 11,38 17,75 19,109 -4,120 -51,225 -140,316 l 27,142 33,-3 c 55,1 100,22 134,62 33,40 51,88 51,144 0,46 -14,85 -39,118 -24,33 -57,59 -98,79 l 35,172 2,40 c -3,89 -51,139 -145,152 -37,4 -71,-6 -103,-27 -32,-22 -50,-52 -56,-90 -1,-27 5,-51 19,-72 15,-21 35,-34 61,-38 22,-3 42,4 59,22 17,15 26,35 27,59 0,32 -11,55 -33,67 -21,12 -39,17 -53,13 2,15 13,25 30,31 l 47,6 c 77,-12 117,-54 118,-125 1,-20 -1,-40 -6,-62 l -30,-136 -76,11 c -75,-2 -138,-29 -189,-82 -52,-53 -81,-121 -89,-202 -3,-82 20,-155 69,-219 48,-64 100,-122 155,-174 -16,-61 -25,-124 -25,-187 0,-43 9,-93 28,-150 19,-57 49,-95 88,-114 12,-3 26,9 40,36 z m -24,89 c -35,11 -59,38 -74,81 -15,44 -23,82 -23,117 0,36 5,71 14,105 35,-29 65,-66 92,-109 25,-45 37,-91 37,-140 0,-14 -4,-26 -12,-37 -8,-11 -19,-16 -34,-17 z m -97,725 c -17,21 -26,45 -26,72 4,44 26,75 66,92 l 6,8 -11,9 c -33,-12 -59,-32 -80,-59 -20,-29 -30,-61 -30,-97 1,-36 13,-69 36,-99 22,-30 50,-51 82,-64 l -25,-128 c -48,40 -90,85 -128,135 -38,49 -59,106 -62,171 2,67 26,119 70,156 45,37 100,55 163,53 l 55,-11 -55,-281 c -25,7 -45,22 -61,43 z m 86,-47 57,277 c 55,-31 82,-78 83,-142 -3,-40 -18,-73 -43,-97 -26,-24 -58,-37 -97,-38 z"
+   id="path1730" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1738"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id14">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="1876"
+   y="3845"
+   width="9121"
+   height="1483"
+   id="rect1735" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1745"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id15">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="1841"
+   y="5009"
+   width="9121"
+   height="23"
+   id="rect1740" />
+
+        <path
+   fill="#000000"
+   stroke="none"
+   d="m 1841,5009 h 9120 v 22 H 1841 Z"
+   id="path1742" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1752"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id16">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="1841"
+   y="4797"
+   width="9121"
+   height="24"
+   id="rect1747" />
+
+        <path
+   fill="#000000"
+   stroke="none"
+   d="m 1841,4797 h 9120 v 22 H 1841 Z"
+   id="path1749" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1759"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id17">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="1841"
+   y="4586"
+   width="9121"
+   height="23"
+   id="rect1754" />
+
+        <path
+   fill="#000000"
+   stroke="none"
+   d="m 1841,4586 h 9120 v 22 H 1841 Z"
+   id="path1756" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1766"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id18">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="1841"
+   y="4374"
+   width="9121"
+   height="23"
+   id="rect1761" />
+
+        <path
+   fill="#000000"
+   stroke="none"
+   d="m 1841,4374 h 9120 v 22 H 1841 Z"
+   id="path1763" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1773"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id19">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="1841"
+   y="4162"
+   width="9121"
+   height="23"
+   id="rect1768" />
+
+        <path
+   fill="#000000"
+   stroke="none"
+   d="m 1841,4162 h 9120 v 22 H 1841 Z"
+   id="path1770" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1778"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id20">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="2003"
+   y="4120"
+   width="451"
+   height="527"
+   id="rect1775" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.ClosedBezierShape"
+       id="g1785"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id21">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="2088"
+   y="4205"
+   width="281"
+   height="357"
+   id="rect1780" />
+
+        <path
+   fill="#000000"
+   stroke="none"
+   d="m 2223,4325 c -37,46 -71,82 -101,107 v 2 h 113 v -73 l 92,-87 v 160 h 41 v 31 h -41 v 16 c -1,17 1,30 6,39 5,9 17,14 34,15 v 26 h -174 v -26 c 18,-1 30,-6 35,-15 5,-9 7,-22 7,-39 v -16 h -147 v -31 c 32,-29 55,-65 69,-106 15,-41 25,-82 29,-123 h 124 c -20,34 -49,74 -87,120 z"
+   id="path1782" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1790"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id22">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="2003"
+   y="4543"
+   width="451"
+   height="527"
+   id="rect1787" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.ClosedBezierShape"
+       id="g1797"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id23">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="2088"
+   y="4628"
+   width="281"
+   height="358"
+   id="rect1792" />
+
+        <path
+   fill="#000000"
+   stroke="none"
+   d="m 2223,4749 c -37,46 -71,82 -101,107 v 3 h 113 v -74 l 92,-87 v 161 h 41 v 29 h -41 v 16 c -1,17 1,30 6,39 5,9 17,14 34,15 v 27 h -174 v -27 c 18,-1 30,-6 35,-15 5,-9 7,-22 7,-39 v -16 h -147 v -29 c 32,-30 55,-65 69,-107 15,-42 25,-83 29,-124 h 124 c -20,35 -49,75 -87,121 z"
+   id="path1794" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1802"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id24">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="2583"
+   y="4268"
+   width="391"
+   height="645"
+   id="rect1799" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.ClosedBezierShape"
+       id="g1809"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id25">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="2667"
+   y="4268"
+   width="223"
+   height="645"
+   id="rect1804" />
+
+        <path
+   fill="#000000"
+   stroke="none"
+   d="m 2888,4433 c -53,57 -82,110 -86,157 0,29 9,58 27,85 l 55,73 -13,16 c -20,-11 -40,-17 -59,-19 -18,0 -33,8 -45,26 -15,26 -18,51 -6,74 11,22 23,39 36,50 l -11,17 -78,-67 c -24,-25 -37,-55 -41,-88 5,-48 32,-72 82,-73 20,0 42,7 66,20 v -2 l -134,-174 c 25,-21 45,-46 62,-75 18,-29 25,-60 23,-93 -9,-34 -26,-64 -51,-92 h 37 z"
+   id="path1806" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1814"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id26">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="4456"
+   y="4289"
+   width="391"
+   height="563"
+   id="rect1811" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.ClosedBezierShape"
+       id="g1821"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id27">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="4540"
+   y="4374"
+   width="223"
+   height="394"
+   id="rect1816" />
+
+        <path
+   fill="#000000"
+   stroke="none"
+   d="m 4654,4453 -2,10 c 4,9 11,11 21,6 34,-15 59,-39 75,-72 h 14 l -102,370 h -30 l 82,-290 c -29,18 -60,30 -92,32 -21,0 -40,-7 -55,-21 -15,-12 -23,-29 -25,-49 1,-34 18,-56 52,-64 18,-3 33,1 46,13 13,11 19,26 20,44 z"
+   id="path1818" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1828"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id28">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="6116"
+   y="4480"
+   width="39"
+   height="700"
+   id="rect1823" />
+
+        <path
+   fill="#e52343"
+   stroke="none"
+   d="m 6116,4480 h 38 v 699 h -38 z"
+   id="path1825" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1833"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id29">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="6027"
+   y="4480"
+   width="216"
+   height="877"
+   id="rect1830" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1838"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id30">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="6041"
+   y="4480"
+   width="403"
+   height="637"
+   id="rect1835" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.ClosedBezierShape"
+       id="g1845"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id31">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="6126"
+   y="4480"
+   width="233"
+   height="637"
+   id="rect1840" />
+
+        <path
+   fill="#e52343"
+   stroke="none"
+   d="m 6358,4892 c -1,45 -9,87 -26,127 l -48,97 h -13 l 37,-88 c 14,-35 21,-73 21,-113 -2,-48 -19,-91 -48,-129 -17,-22 -37,-40 -61,-54 -24,-14 -48,-23 -72,-26 v 17 h -22 v -243 h 22 l 12,70 c 5,26 18,52 39,79 l 98,110 c 38,46 58,97 61,153 z"
+   id="path1842" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1852"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id32">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="5821"
+   y="5206"
+   width="402"
+   height="30"
+   id="rect1847" />
+
+        <path
+   fill="#e52343"
+   stroke="none"
+   d="m 5821,5207 h 401 v 28 h -401 z"
+   id="path1849" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1857"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id33">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="5794"
+   y="5026"
+   width="446"
+   height="391"
+   id="rect1854" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.ClosedBezierShape"
+       id="g1864"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id34">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="5879"
+   y="5111"
+   width="277"
+   height="223"
+   id="rect1859" />
+
+        <path
+   fill="#e52343"
+   stroke="none"
+   d="m 6155,5189 c -3,39 -23,72 -61,99 -38,28 -79,42 -121,44 -27,-1 -49,-8 -67,-21 -18,-15 -27,-35 -27,-59 2,-36 22,-68 61,-97 37,-28 75,-43 114,-44 31,-1 55,5 72,19 18,12 28,31 29,59 z"
+   id="path1861" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1871"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id35">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="7453"
+   y="4374"
+   width="40"
+   height="700"
+   id="rect1866" />
+
+        <path
+   fill="#ff9d00"
+   stroke="none"
+   d="m 7454,4374 h 38 v 699 h -38 z"
+   id="path1868" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1876"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id36">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="7365"
+   y="4373"
+   width="216"
+   height="878"
+   id="rect1873" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1881"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id37">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="7132"
+   y="4920"
+   width="447"
+   height="392"
+   id="rect1878" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.ClosedBezierShape"
+       id="g1888"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id38">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="7217"
+   y="5005"
+   width="277"
+   height="223"
+   id="rect1883" />
+
+        <path
+   fill="#ff9d00"
+   stroke="none"
+   d="m 7493,5082 c -3,39 -23,72 -61,100 -38,28 -79,42 -121,44 -28,-1 -50,-8 -67,-21 -18,-15 -27,-36 -27,-60 2,-36 22,-68 60,-96 38,-28 76,-43 115,-44 31,-1 55,5 72,19 18,12 28,31 29,58 z"
+   id="path1885" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1895"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id39">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="9327"
+   y="4480"
+   width="39"
+   height="700"
+   id="rect1890" />
+
+        <path
+   fill="#e52343"
+   stroke="none"
+   d="m 9327,4480 h 38 v 699 h -38 z"
+   id="path1892" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1900"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id40">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="9239"
+   y="4480"
+   width="215"
+   height="877"
+   id="rect1897" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1907"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id41">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="9032"
+   y="5206"
+   width="403"
+   height="30"
+   id="rect1902" />
+
+        <path
+   fill="#e52343"
+   stroke="none"
+   d="m 9033,5207 h 401 v 28 h -401 z"
+   id="path1904" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1912"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id42">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="9005"
+   y="5026"
+   width="447"
+   height="391"
+   id="rect1909" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.ClosedBezierShape"
+       id="g1919"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id43">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="9090"
+   y="5111"
+   width="278"
+   height="223"
+   id="rect1914" />
+
+        <path
+   fill="#e52343"
+   stroke="none"
+   d="m 9366,5189 c -3,39 -23,72 -60,99 -39,28 -80,42 -123,44 -27,-1 -49,-8 -66,-21 -17,-15 -26,-35 -27,-59 3,-36 23,-68 60,-97 37,-28 76,-43 115,-44 31,-1 55,5 72,19 19,12 28,31 29,59 z"
+   id="path1916" />
+
+       </g>
+
+      </g>
+    <g
+       class="com.sun.star.drawing.PolyPolygonShape"
+       id="g1931"
+       transform="matrix(0.01,0,0,0.01,81.75,98.032)">
+       <g
+   id="id45">
+        <rect
+   class="BoundingBox"
+   stroke="none"
+   fill="none"
+   x="10963"
+   y="4162"
+   width="35"
+   height="870"
+   id="rect1926" />
+
+        <path
+   fill="#000000"
+   stroke="none"
+   d="m 10996,5031 h -33 v -869 h 33 z"
+   id="path1928" />
+
+       </g>
+
+      </g>
+  </g>
+</svg>
