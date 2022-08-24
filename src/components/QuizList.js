@@ -34,8 +34,22 @@ function QuizList() {
     ]
   };
 
+  const sampleQuestion3 = {
+    type: "Sequence Identification",
+    title: "Questão 3",
+    sounds: [[3, 62, 2.5, 0], [3, 60, 2.5, 0.2], [3, 64, 0.5, 0.5]],
+    correct: 4,
+    choices: [
+      { note: getImgNota("C"), sound: getNota("C")},
+      { note: getImgNota("D"), sound: getNota("D")},
+      { note: getImgNota("E"), sound: getNota("E")},
+      { note: getImgNota("F"), sound: getNota("F")},
+    ]
+  };
 
-  const [questions, setQuestions] = useState([sampleQuestion2]);
+
+
+  const [questions, setQuestions] = useState([sampleQuestion2, sampleQuestion3]);
 
   const [currentQuestion, setCurrentQuestion] = useState(sampleQuestion);
 

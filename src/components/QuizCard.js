@@ -23,13 +23,22 @@ function QuizCard(props) {
     );
   }
 
+  const handlePlay = (question) => {
+    if (question.type === "Note Identification") {
+      midiSounds.playChordNow(question.sound[0], [question.sound[1]], question.sound[2]);
+    } else if (question.type === "Sequence Identification") {
+      question.sounds.forEach(sound => {
+        midiSounds.playChordAt(midiSounds.contextTime() + sound[3], sound[0], [sound[1]], sound[2]);
+      });
+    }
+  }
+
   return (
     <>
       <Card style={{ margin: 50, padding: 50 }}>
           <CardContent>
             <h2>{question.title}</h2>
-            <div 
-                 onClick={() => midiSounds.playChordNow(question.sound[0], [question.sound[1]], question.sound[2])}>
+            <div onClick={() => handlePlay(question)}>
               <img width={100} src={SpeakerSVG} alt="Sound"/>
             </div>
           </CardContent>

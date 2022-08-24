@@ -67,35 +67,35 @@ function App() {
                     </MenuItem>
                     <MenuItem onClick={() => {
                         setAnchorEl(null);
-                        navigate("/test");
+                        navigate("/fundamentals");
                       }
                      }>
                       1 - Fundamentals
                     </MenuItem>
                     <MenuItem onClick={() => {
                         setAnchorEl(null);
-                        navigate("/prototype");
+                        navigate("/freeplay");
                       }
                      }>
                       2 - Notes
                     </MenuItem>
                     <MenuItem onClick={() => {
                         setAnchorEl(null);
-                        navigate("/quiz");
+                        navigate("/freeplay");
                       }
                      }>
                       3 - Notes
                     </MenuItem>
                     <MenuItem onClick={() => {
                         setAnchorEl(null);
-                        navigate("/test");
+                        navigate("/freeplay");
                       }
                      }>
                       4 - Chords
                     </MenuItem>
                     <MenuItem onClick={() => {
                         setAnchorEl(null);
-                        navigate("/test");
+                        navigate("/freeplay");
                       }
                      }>
                       5 - Songs
@@ -103,21 +103,21 @@ function App() {
                     <div>---------------</div>
                     <MenuItem onClick={() => {
                         setAnchorEl(null);
-                        navigate("/test");
+                        navigate("/freeplay");
                       }
                      }>
                       Free Play!
                     </MenuItem>
                     <MenuItem onClick={() => {
                         setAnchorEl(null);
-                        navigate("/test");
+                        navigate("/freeplay");
                       }
                      }>
                       Forum
                     </MenuItem>
                     <MenuItem onClick={() => {
                         setAnchorEl(null);
-                        navigate("/test");
+                        navigate("/freeplay");
                       }
                      }>
                       Support
@@ -125,7 +125,7 @@ function App() {
 
                     <MenuItem onClick={() => {
                         setAnchorEl(null);
-                        navigate("/test");
+                        navigate("/freeplay");
                       }
                      }>
                       Settings
@@ -133,7 +133,7 @@ function App() {
 
                     <MenuItem onClick={() => {
                         setAnchorEl(null);
-                        navigate("/test");
+                        navigate("/freeplay");
                       }
                      }>
                       About Us
@@ -152,10 +152,10 @@ function App() {
         <div style={{ margin: 40 }}>
           <Routes>
               <Route path="/" element={<MainPage />} />
-              <Route path="/test" element={<Notas />} />
+              <Route path="/freeplay" element={<Notas />} />
               <Route path="/prototype" element={<Prototype />} />
               <Route path="/prototype2" element={<SecondPrototype />} />
-              <Route path="/quiz" element={<QuizList />} />
+              <Route path="/fundamentals" element={<QuizList />} />
               <Route path="*" element={<div>lol</div>} />
           </Routes>
         </div>
