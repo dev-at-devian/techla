@@ -10,7 +10,7 @@ function QuizList() {
 
   const sampleQuestion = {
     type: "Note Identification",
-    title: "Chalange 1",
+    title: "Challange 1",
     sound: [3, 60, 2.5],
     correct: 1,
     choices: [
@@ -23,7 +23,7 @@ function QuizList() {
 
   const sampleQuestion2 = {
     type: "Note Identification",
-    title: "Chalange 2",
+    title: "Challange 2",
     sound: [3, 62, 2.5],
     correct: 4,
     choices: [
@@ -36,7 +36,7 @@ function QuizList() {
 
   const sampleQuestion3 = {
     type: "Sequence Identification",
-    title: "Chalange 3",
+    title: "Challange 3",
     sounds: [[3, 62, 2.5, 0], [3, 60, 2.5, 0.5], [3, 64, 0.5, 1]],
     correct: 4,
     choices: [
