@@ -40,10 +40,10 @@ function QuizList() {
     sounds: [[3, 62, 2.5, 0], [3, 60, 2.5, 0.5], [3, 64, 0.5, 1]],
     correct: 4,
     choices: [
-      { note: getImgNota("1"), sound: getNota("C")},
-      { note: getImgNota("2"), sound: getNota("D")},
-      { note: getImgNota("3"), sound: getNota("E")},
-      { note: getImgNota("4"), sound: getNota("F")},
+      { note: getImgNota("1"), sound: getNota("1")},
+      { note: getImgNota("2"), sound: getNota("2")},
+      { note: getImgNota("3"), sound: getNota("3")},
+      { note: getImgNota("4"), sound: getNota("4")},
     ]
   };
 

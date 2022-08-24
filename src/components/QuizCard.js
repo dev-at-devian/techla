@@ -15,7 +15,14 @@ function QuizCard(props) {
     choices.push(
       <div style={{ border:((selectedAnswer === (i+1)) ? "4px solid black" : "none"), padding:10, borderRadius:25 }} 
             onClick={ () => {
-               midiSounds.playChordNow(question.choices[i].sound[0], [question.choices[i].sound[1]], question.choices[i].sound[2]);
+               if (question.type === "Note Identification") {
+                  midiSounds.playChordNow(question.choices[i].sound[0], [question.choices[i].sound[1]], question.choices[i].sound[2]);
+               } else if (question.type === "Sequence Identification") {
+                question.choices[i].sound.forEach(sound => {
+                  midiSounds.playChordAt(midiSounds.contextTime() + sound[3], sound[0], [sound[1]], sound[2]);
+                });
+               };
+
                setSelectedAnswer(i+1);
          }}>
          <img src={question.choices[i].note} width="100" height="60" />
