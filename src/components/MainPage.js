@@ -8,7 +8,11 @@ function MainPage() {
     return (
         <>
             <div className='mainPage'>
-                This is the main page
+                <div style={{position: "relative", width:"100%", height: 0, paddingTop: "56.25%", paddingBottom: 48, boxShadow: "0 2px 8px 0 rgba(63,69,81,0.16)", marginTop: "1.6em", marginBottom: "0.9em", overflow: "hidden", borderRadius: 8, willChange: "transform"}}>
+                  <iframe loading="lazy" style={{position: "absolute", width: "100%", height: "100%", top: 0, left: 0, border: "none", padding: 0, margin: 0}}
+                            src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFKPi95CCE&#x2F;view?embed" allowFullScreen="allowfullscreen" allow="fullscreen">
+                  </iframe>
+                </div>
             </div>
         </>
     );
