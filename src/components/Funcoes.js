@@ -2,6 +2,10 @@ import imgDo from '../img/do.png';
 import imgRe from '../img/re.png';
 import imgMi from '../img/mi.png';
 import imgFa from '../img/fa.png';
+import imgR1 from '../img/resposta1.png';
+import imgR2 from '../img/resposta2.png';
+import imgR3 from '../img/resposta3.png';
+import imgR4 from '../img/resposta4.png';
 
 export const getNota = (str) => {
     if (str == "C") {
@@ -37,6 +41,23 @@ export const getImgNota = (str) => {
     if (str == "F") {
         return imgFa
     };
+
+    if (str == "1") {
+        return imgR1
+    };
+
+    if (str == "2") {
+        return imgR2
+    };
+
+    if (str == "3") {
+        return imgR3
+    };
+
+    if (str == "4") {
+        return imgR4
+    };
+
 }
 
 
