@@ -13,7 +13,7 @@ body {
 
 .AppBar {
     background-color: rgba(0, 0, 0, 0) !important;
-    outline: 10px solid rgba(0, 0, 0, 0.2);
+    outline: 8px solid #a7c2d4;
     box-shadow: none !important;
     color: black;
 }

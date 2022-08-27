@@ -4,7 +4,7 @@ import imgMi from '../img/mi.png'
 import imgFa from '../img/fa.png';
 import { useState, useRef, useEffect } from 'react';
 import MIDISounds from 'midi-sounds-react';
-import SecondPrototype from './SecondPrototype';
+import ThirdPrototype from './ThirdPrototype';
 
 function Notas() {
 
@@ -122,7 +122,7 @@ function Notas() {
 
 
   const showDo = () => {
-    midiSounds.playChordNow(3, [60], 2.5)
+    //midiSounds.playChordNow(3, [60], 2.5)
     setNota(imgDo);
     setNome("dó");
     setNotas(notas + "1");
@@ -130,7 +130,7 @@ function Notas() {
   }
 
   const showRe = () => {
-    midiSounds.playChordNow(3, [62], 2.5)
+    //midiSounds.playChordNow(3, [62], 2.5)
     setNota(imgRe);
     setNome("ré");
     setNotas(notas + "2");
@@ -138,7 +138,7 @@ function Notas() {
   }
 
   const showMi = () => {
-    midiSounds.playChordNow(3, [64], 2.5)
+    //midiSounds.playChordNow(3, [64], 2.5)
     setNota(imgMi);
     setNome("mi");
     setNotas(notas + "3");
@@ -146,7 +146,7 @@ function Notas() {
   }
 
   const showFa = () => {
-    midiSounds.playChordNow(3, [65], 2.5)
+    //midiSounds.playChordNow(3, [65], 2.5)
     setNota(imgFa);
     setNome("fá");
     setNotas(notas + "4");
@@ -158,7 +158,7 @@ function Notas() {
 
     <div className="App">
 
-      <SecondPrototype />
+      <ThirdPrototype />
 
       <header className="App-header">
         <a
@@ -178,7 +178,6 @@ function Notas() {
             <img src={imgNota} />
         </p>
         <div style={{ visibility: "collapse" }}>
-          <MIDISounds ref={(ref) => (midiSounds = ref)} appElementName="root" instruments={[3]} />
         </div>
       </header>
     </div>

@@ -14,6 +14,9 @@ import Prototype from './components/Prototype'
 import SecondPrototype from './components/SecondPrototype';
 import MainPage from './components/MainPage';
 import Notas from './components/Notas';
+import ScaledBlocks from './components/ScaledBlocks';
+
+import Logo from './img/logo.svg';
 
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -45,11 +48,10 @@ function App() {
                     onClick={(event) => setAnchorEl(event.currentTarget)}
                     color="inherit"
                   >
-                    <MenuIcon />
+                    <MenuIcon style={{color:"#6c7e9c"}}/>
                   </IconButton>
                   
                   <Menu
-                    style={{color:"rgba(0,0,0,0.2)"}}
                     id="menu-appbar"
                     anchorEl={anchorEl}
                     anchorOrigin={{ vertical: 'top', horizontal: 'left', }}
@@ -145,7 +147,8 @@ function App() {
 
 
                 </div>
-                <h1 style={{color:"rgba(0,0,0,0.4)"}}>tech_la</h1>
+                <img src={Logo} width="40dp" alt="Logo" />
+                <h1 style={{fontFamily:"'Roboto', sans-serif", fontWeight:"100", color:"#6c7e9c"}}>tech_la</h1>
             </Toolbar>
         </AppBar>
 
@@ -156,6 +159,7 @@ function App() {
               <Route path="/prototype" element={<Prototype />} />
               <Route path="/prototype2" element={<SecondPrototype />} />
               <Route path="/fundamentals" element={<QuizList />} />
+              <Route path="/scaledblocks" element={<ScaledBlocks />} />
               <Route path="*" element={<div>lol</div>} />
           </Routes>
         </div>

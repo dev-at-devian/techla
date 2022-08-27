@@ -2,7 +2,7 @@ import { Card, CardContent, CardActions } from '@mui/material';
 import {useState, useRef} from 'react';
 import QuizCard from './QuizCard';
 import {getImgNota, getNota} from './Funcoes.js';
-import SecondPrototype from './SecondPrototype';
+import ThirdPrototype from './ThirdPrototype';
 
 function QuizList() {
 
@@ -70,7 +70,7 @@ function QuizList() {
             <h2>Challenges:</h2>
             {ended ? <h2>Success</h2> : <QuizCard question={currentQuestion} onCorrect={handleCorrectAnswer} />}
           </CardContent>
-          <SecondPrototype />
+          <ThirdPrototype />
         </Card>
         
     </>

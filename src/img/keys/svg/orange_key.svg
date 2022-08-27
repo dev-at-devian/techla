@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg222"
+   width="120"
+   height="392.72699"
+   viewBox="0 0 120 392.72699"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <!-- xmlns:svg="http://www.w3.org/2000/svg" -->
+  <defs
+     id="defs226" />
+  <g
+     id="yellow_released"
+     style="display:inline;stroke-width:1.02699"
+     transform="matrix(1,0,0,0.94812787,1e-5,0.23510207)">
+    <path
+       id="rect1100-6-3"
+       style="display:inline;fill:#fab01d;fill-opacity:1;stroke:#1c1117;stroke-width:7.76304;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:stroke fill markers"
+       d="M 83.853652,4.529 112.38959,24.107 112.619,202.50237 C 110.65729,202.11289 81.831,177.07471 81.831,177.07471 Z" />
+    <path
+       id="rect999-7-6"
+       style="display:inline;fill:#fab01d;fill-opacity:1;stroke:#1c1117;stroke-width:7.76304;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 4.5295,183.01433 h 79.221217 l 28.868113,23.2447 H 36.203221 Z" />
+    <path
+       id="rect389-5-0"
+       style="display:inline;fill:#fadd2b;fill-opacity:1;stroke:#1c1117;stroke-width:7.76301;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:stroke fill markers"
+       d="M 4.5295,4.5295 H 81.83109 V 179.46798 H 4.5295 Z" />
+  </g>
+  <g
+     id="yellow_released-2"
+     style="display:inline;stroke-width:1.02699"
+     transform="matrix(1,0,0,0.94812787,0.10200501,192.73678)">
+    <path
+       id="rect1100-6-3-0"
+       style="display:inline;fill:#fab01d;fill-opacity:1;stroke:#1c1117;stroke-width:7.76304;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:stroke fill markers"
+       d="M 83.853652,4.529 112.38959,24.107 112.619,202.50237 C 110.65729,202.11289 81.831,177.07471 81.831,177.07471 Z" />
+    <path
+       id="rect999-7-6-6"
+       style="display:inline;fill:#fab01d;fill-opacity:1;stroke:#1c1117;stroke-width:7.76304;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m 4.5295,183.01433 h 79.221217 l 28.868113,23.2447 H 36.203221 Z" />
+    <path
+       id="rect389-5-0-1"
+       style="display:inline;fill:#fadd2b;fill-opacity:1;stroke:#1c1117;stroke-width:7.76301;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:stroke fill markers"
+       d="M 4.5295,4.5295 H 81.83109 V 179.46798 H 4.5295 Z" />
+  </g>
+</svg>

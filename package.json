@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
+    "@fontsource/roboto": "^4.5.8",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.10.1",
     "@testing-library/jest-dom": "^5.14.1",
@@ -16,6 +17,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "svg-music-notation": "^0.1.1",
+    "tone": "^14.7.77",
     "use-timer": "^2.0.1",
     "web-vitals": "^2.1.0"
   },
