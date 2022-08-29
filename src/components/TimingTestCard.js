@@ -2,6 +2,7 @@ import MIDISounds from 'midi-sounds-react';
 import {useState, useRef, useEffect, forwardRef} from 'react';
 import Grid from '@mui/material/Grid';
 import * as Tone from 'tone'
+import { Card, CardContent, CardActions } from '@mui/material';
 
 export function RedBlock(props) {
     return (
@@ -292,16 +293,20 @@ export function GreenBlock(props) {
 
 
 
-function ScaledBlocks(props) {
+function TimingTestCard(props) {
 
    const synth = new Tone.Synth().toDestination();
    synth.toDestination();
 
 
    const [marks, setMarks] = useState([false,false,false,false]);
+   const [isAnswered, setIsAnswered] = useState(false);
    const [success, setSuccess] = useState(false);
    const successRef = useRef(success);
+   const [successes, setSuccesses] = useState(0);
+   const successesRef = useRef(successes);
    successRef.current = success;
+   successesRef.current = successes;
    const [waitingKey, setWaitingKey] = useState(false);
    const [isTesting, setIsTesting] = useState(false);
    const [validHit, setValidHit] = useState(false);
@@ -390,16 +395,18 @@ function ScaledBlocks(props) {
    }
 
    const testTiming = () => {
-      setTimeout(() => {setIsTesting(true); setMarks([false,false,false,false]); console.log("play")}, 0);
+      setTimeout(() => {setIsTesting(true); console.log("play")}, 0);
       setTimeout(() => {setValidHit(true); setSuccess(true)}, 0);
-      setTimeout(() => {setValidHit(false); console.log(successRef.current)}, 200);
+      setTimeout(() => {setValidHit(false); setSuccesses(successRef.current ? successesRef.current + 1 : successesRef.current)}, 200);
       setTimeout(() => {setValidHit(true); setSuccess(false)}, 900);
-      setTimeout(() => {setValidHit(false); console.log(successRef.current)}, 1100);
+      setTimeout(() => {setValidHit(false);  setSuccesses(successRef.current ? successesRef.current + 1 : successesRef.current)}, 1100);
       setTimeout(() => {setValidHit(true); setSuccess(false)}, 1150);
-      setTimeout(() => {setValidHit(false); console.log(successRef.current); setSuccess(false)}, 1350);
+      setTimeout(() => {setValidHit(false);  setSuccesses(successRef.current ? successesRef.current + 1 : successesRef.current); setSuccess(false)}, 1350);
       setTimeout(() => {setValidHit(true); setSuccess(false)}, 1650);
-      setTimeout(() => {setValidHit(false); console.log(successRef.current); setSuccess(false); setIsTesting(false)}, 1850);
-      setTimeout(() => {console.log(marks)}, 2000);
+      setTimeout(() => {setValidHit(false);  setSuccesses(successRef.current ? successesRef.current + 1 : successesRef.current); setSuccess(false); setIsTesting(false)}, 1850);
+      setTimeout(() => {
+         console.log(successesRef.current);
+         setIsAnswered(true)}, 2000);
    }
 
     useEventListener("keydown", keyDownHandler);
@@ -407,24 +414,43 @@ function ScaledBlocks(props) {
 
     return (
        <>
-         <Grid container direction="row" justifyContent="center" alignItems="flex-end">
-           <Grid xs={1} container item direction="column" justifyContent="center" alignItems="center">
-              <YellowBlock highlighted={(highlightedNote===1) ? 1 : 0} blocks={1}/>
-           </Grid>
-           <Grid xs={1} container item direction="column" justifyContent="center" alignItems="center">
-              <OrangeBlock highlighted={(highlightedNote===2) ? 1 : 0} blocks={1} />
-           </Grid>
-           <Grid xs={1} container item direction="column" justifyContent="center" alignItems="center">
-              <RedBlock highlighted={(highlightedNote===3) ? 1 : 0} blocks={1}/>
-           </Grid>
-           <Grid xs={1} container item direction="column" justifyContent="center" alignItems="center">
-              <GreenBlock highlighted={highlightedNote===4 ? 1 : 0} blocks={1}/>
-           </Grid>
-         </Grid>
-         <button style={{margin:25}} onClick={async () => {await Tone.start(); playSong()}}>Play</button>
-          <h2>{`${waitingKey ? "waiting" : "no"} - ${isTesting} - ${validHit} - ${success}`}</h2>
+          <div style={{display: (isAnswered ? "none" : "inline")}}>
+             <Card style={{ margin: 50 }}>
+                <CardContent>
+                   <h2>Repeat the timing:</h2>
+                   <Grid container direction="row" justifyContent="center" alignItems="flex-end">
+                    <Grid xs={1} container item direction="column" justifyContent="center" alignItems="center">
+                       <YellowBlock highlighted={(highlightedNote===1) ? 1 : 0} blocks={1}/>
+                    </Grid>
+                    <Grid xs={1} container item direction="column" justifyContent="center" alignItems="center">
+                       <OrangeBlock highlighted={(highlightedNote===2) ? 1 : 0} blocks={1} />
+                    </Grid>
+                    <Grid xs={1} container item direction="column" justifyContent="center" alignItems="center">
+                       <RedBlock highlighted={(highlightedNote===3) ? 1 : 0} blocks={1}/>
+                    </Grid>
+                    <Grid xs={1} container item direction="column" justifyContent="center" alignItems="center">
+                       <GreenBlock highlighted={highlightedNote===4 ? 1 : 0} blocks={1}/>
+                    </Grid>
+                   </Grid>
+                   <button style={{margin:25}} onClick={async () => {await Tone.start(); playSong()}}>Play</button>
+                   <h2>{`${waitingKey ? "waiting" : "no"} - ${isTesting} - ${validHit} - ${success}`}</h2>
+                </CardContent>
+             </Card>
+         </div>
+         <div style={{display: (isAnswered ? "inline" : "none")}}>
+             <Card style={{ margin: 50 }}>
+                <CardContent>
+                  <div>
+                     <h1>{successes === 4 ? "Success" : "Oops!"}</h1>
+                     <h2>Successful hits: {successes}</h2>
+                     <button onClick={() => {setIsAnswered(false); setSuccesses(0);}}>Retry</button>
+                     <button onClick={() => {setIsAnswered(false); setSuccesses(0); (successes === 4 ? props.onCorrect() : props.onIncorrect())}}>Continue</button>
+                  </div>
+                </CardContent>
+             </Card>
+         </div>
        </>
     );
 };
 
-export default ScaledBlocks;
+export default TimingTestCard;

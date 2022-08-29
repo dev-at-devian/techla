@@ -9,12 +9,12 @@ import { Card, CardContent, CardActions } from '@mui/material';
 import { BrowserRouter, Routes, Route, useNavigate} from "react-router-dom";
 
 import QuizCard from './components/QuizCard';
-import QuizList from './components/QuizList';
+import ChallengeList from './components/ChallengeList';
 import Prototype from './components/Prototype'
 import SecondPrototype from './components/SecondPrototype';
 import MainPage from './components/MainPage';
 import Notas from './components/Notas';
-import ScaledBlocks from './components/ScaledBlocks';
+import TimingTestCard from './components/TimingTestCard';
 
 import Logo from './img/logo.svg';
 
@@ -158,8 +158,8 @@ function App() {
               <Route path="/freeplay" element={<Notas />} />
               <Route path="/prototype" element={<Prototype />} />
               <Route path="/prototype2" element={<SecondPrototype />} />
-              <Route path="/fundamentals" element={<QuizList />} />
-              <Route path="/scaledblocks" element={<ScaledBlocks />} />
+              <Route path="/fundamentals" element={<ChallengeList />} />
+              <Route path="/timingtest" element={<TimingTestCard />} />
               <Route path="*" element={<div>lol</div>} />
           </Routes>
         </div>

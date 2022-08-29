@@ -4,7 +4,7 @@ import imgMi from '../img/mi.png'
 import imgFa from '../img/fa.png';
 import { useState, useRef, useEffect } from 'react';
 import MIDISounds from 'midi-sounds-react';
-import ThirdPrototype from './ThirdPrototype';
+import FreePlayKeyboard from './FreePlayKeyboard';
 
 function Notas() {
 
@@ -158,28 +158,16 @@ function Notas() {
 
     <div className="App">
 
-      <ThirdPrototype />
+      <FreePlayKeyboard />
 
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-
-
-         </a>
-        <p>
-          {txtJogo}
-        </p>
-        <p>
-            {txtNota} <br />
-            <img src={imgNota} />
-        </p>
+      <div>
+        <div>
+          <h2>{txtNota}</h2>
+          <img src={imgNota} alt="Note"/>
+        </div>
         <div style={{ visibility: "collapse" }}>
         </div>
-      </header>
+      </div>
     </div>
   );
 }

@@ -21,7 +21,7 @@ import GreenWholePressed from '../img/keys/green/whole_pressed.PNG';
 import GreenHalfReleased from '../img/keys/green/half_released.PNG';
 import GreenHalfPressed from '../img/keys/green/half_pressed.PNG';
 
-function ThirdPrototype(props) {
+function FreePlayKeyboard(props) {
 
     const [redPressed, setRedPressed] = useState(false);
     const [orangePressed, setOrangePressed] = useState(false);
@@ -242,4 +242,4 @@ function ThirdPrototype(props) {
     );
 };
 
-export default ThirdPrototype;
+export default FreePlayKeyboard;
